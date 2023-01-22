@@ -1,0 +1,23 @@
+<svg
+                    className="mb-0.5"
+                    id="MYACCOUNT"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="40"
+                    viewBox="0 0 40 40"
+                  >
+                    <rect
+                      id="Rectángulo_7"
+                      data-name="Rectángulo 7"
+                      width="40"
+                      height="40"
+                      fill="#fff"
+                      opacity="0"
+                    />
+                    <path
+                      id="Icon_material-person-outline"
+                      data-name="Icon material-person-outline"
+                      d="M15.545,8.267a2.506,2.506,0,1,1-2.506,2.506,2.505,2.505,0,0,1,2.506-2.506m0,10.739c3.544,0,7.278,1.742,7.278,2.506v1.313H8.267V21.511c0-.764,3.735-2.506,7.278-2.506M15.545,6a4.773,4.773,0,1,0,4.773,4.773A4.771,4.771,0,0,0,15.545,6Zm0,10.739C12.36,16.739,6,18.338,6,21.511v3.58H25.091v-3.58C25.091,18.338,18.731,16.739,15.545,16.739Z"
+                      transform="translate(4.833 4.833)"
+                    />
+                  </svg>

@@ -1,0 +1,85 @@
+@tailwind base;
+@import './base.css';
+
+@tailwind components;
+@import './components.css';
+
+@tailwind utilities;
+
+:focus-visible {
+  outline: none !important;
+}
+
+.faqs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.faqs-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail.is-active {
+  opacity: 1;
+}
+
+.showme {
+  display: none;
+}
+.showhim:hover .showme {
+  display: block;
+}
+.showhim:hover .ok {
+  display: none;
+}
+
+.mapBox::-webkit-scrollbar {
+  display: none!important;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

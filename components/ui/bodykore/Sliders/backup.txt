@@ -1,0 +1,320 @@
+<>
+<SeoHeader seo={dinamycSeo()} />
+<Header
+  productCat={header.categories}
+  dynamicPages={header.pages}
+  // navigation={header.navigation}
+/>
+<section className="w-full">
+  <div className="pb-10 px-6">
+    <SwitchPagesOptions options={switchPage} />
+  </div>
+
+  {/*PRODUCT SECTION*/}
+
+  <div className="flex lg:flex-row flex-wrap justify-center md:justify-start max-w-7xl m-auto px-6">
+    <div className="md:w-1/2 w-96 pr-8">
+      <ImgPagSlider
+        bgImage={mapImages()}
+        //bgImage={mapImages()}
+      />
+    </div>
+
+    <div className="md:w-1/2 w-96">
+      <div className="pb-4 max-w-7xl m-auto leading-none">
+        <Blacktitle
+          title={product.title}
+          textSize="text-4xl"
+          textColor="text-black-373933"
+        />
+      </div>
+
+      <SingleProduct
+        affirmMonthly="$60/mo"
+        affirmTax="at 0%"
+        affirmLogo="/Product/affirm.jpg"
+        rating={getRating()}
+        numReviews={reviews?.length || 0}
+        description={product.description}
+        options={mapOptions()}
+        reviewOnClick={scrollDown}
+      />
+    </div>
+  </div>
+
+  {/*3 opts below product OPTIONS SECTION*/}
+  <div className="w-full border-b border-g border-t">
+    <div className="flex flex-wrap justify-center">
+      <Threekeys
+        textSize="text-xs"
+        threekeys={[
+          {
+            icon: '/Product/location.svg',
+            title: 'Home Delivery',
+            description: 'On All Bicycles',
+          },
+          {
+            icon: '/Product/freereturn.svg',
+            title: 'Free Returns',
+            description: 'Within 14 Days',
+          },
+          {
+            icon: '/Product/assembly.svg',
+            title: 'Assembly Included',
+            description: 'By a professional mechanic',
+          },
+        ]} factors={[]}            />
+    </div>
+  </div>
+
+  {/*NAV OPTIONS SECTION*/}
+  <div className="pb-28'">
+    <BlackNavOptions
+      height="h-fit"
+      options={[
+        {
+          icon: '/svg/paper.svg',
+          text: 'Description',
+          id: 'description',
+        },
+        {
+          icon: '/svg/highlight.svg',
+          text: 'Highlights',
+          id: 'highlights',
+        },
+        {
+          icon: '/svg/key.svg',
+          text: 'Key Performance Factors',
+          id: 'key',
+        },
+        {
+          icon: '/svg/paper.svg',
+          text: 'Specifications',
+          id: 'specifications',
+        },
+        {
+          icon: '/svg/reviewStar.svg',
+          text: 'Reviews',
+          id: 'reviews',
+        },
+      ]}
+    />
+  </div>
+
+  <InvisibleBanner height="h-8" id="description" />
+
+  {/*DESCRIPTION SECTION*/}
+  <div className="flex justify-center md:justify-start m-auto pb-7">
+    <Blacktitle
+      title="DESCRIPTION"
+      textSize="text-4xl"
+      textColor="text-black-373933"
+    />
+  </div>
+  <div className="flex lg:flex-row flex-wrap justify-center md:justify-start max-w-7xl m-auto px-6">
+    <div className="md:w-1/2 w-96 pr-8">
+      <PlainText
+        textColor="text-black-373933"
+        textPosition="lg:text-left"
+        paragraphs={[
+          {
+            description: product.descSummary?.value,
+          },
+        ]}
+      />
+
+      {product.descFeatures ? (
+        <>
+          <div className="pb-2 pt-2">
+            <Blacktitle
+              title="FEATURES"
+              textSize="text-2xl"
+              textColor="text-red-bc2026"
+            />
+          </div>
+
+          <PlainList
+            textColor="text-black-1c2023"
+            List={product.descFeatures?.value
+              .split(',')
+              .map((item) => ({ text: item }))}
+          />
+        </>
+      ) : null}
+    </div>
+
+    <div className="md:w-1/2 w-96 pr-8">
+      <Image img={product.descImage?.value} buttons={[]} />
+    </div>
+  </div>
+
+  <InvisibleBanner height="h-28" id="highlights" />
+
+  {/*Images SECTION*/}
+
+  <div className="w-full bg-gray-300 py-10">
+    <div className="flex justify-center md:justify-start m-auto">
+      <Blacktitle
+        title="Gallery"
+        textSize="text-4xl"
+        textColor="text-black-373933"
+      />
+      
+    </div>
+    <div className="max-w-7xl flex justify-center md:justify-start m-auto">
+      
+    <ImgGallery
+      imgHeight="h-72"
+      imgWidth="w-72"
+      images={mapImagesSingle()}
+    />
+    </div>
+  </div>
+
+  {/*HIGHLIGHTS SECTION*/}
+
+  <div className="w-full py-10">
+    <div className="flex justify-center md:justify-start m-auto pb-5">
+    {/* <Blacktitle
+      title="Features"
+      textSize="text-4xl"
+      // textPosition="text-left"
+      textColor="text-black-373933"
+    /> */}
+      </div>
+      <div className="max-w-7xl flex justify-center md:justify-start m-auto">
+      {/* <ImgDescription
+      imgHeight="h-72"
+      imgWidth="w-72"
+      textSize="text-sm"
+      // textPosition="text-left"
+      images={mapHighlights()}
+    /> */}
+      </div>
+      </div>
+
+
+  <InvisibleBanner height="h-8" id="key" />
+
+{/*video SECTION*/}
+
+<div className="w-full bg-gray-300 py-10">
+    <div className="flex justify-center md:justify-start m-auto">
+      <Blacktitle
+        title="Video"
+        textSize="text-4xl"
+        textColor="text-black-373933"
+      />
+      
+    </div>
+    <div className="max-w-7xl flex justify-center md:justify-start m-auto">
+    <Video
+      videos={mapVideo()}
+    />
+    </div>
+  </div>
+
+  {/*SPECS SECTION*/}
+  <div className="flex justify-center md:justify-start m-auto pb-7">
+    <Blacktitle
+      title="SPECIFICATIONS"
+      textSize="text-4xl"
+      textColor="text-black-373933"
+    />
+  </div>
+
+  <div className="w-full py-10">
+  <div className="max-w-7xl m-auto">
+    <div className="md:w-1/2 m-auto w-96 pr-8">
+    {/* {' '}
+      {product.specImages
+        ? product.specImages.value
+            .split(',')
+            .map((item, index) => (
+              <Image key={index} img={item} buttons={[]} />
+            ))
+        : null} */}
+        
+      {singleProduct.specification.length > 0 ? (
+        <>
+        <Image img={singleProduct.specification[0].image.url} buttons={[]} /><PlainList
+            textColor="text-black-373933"
+            List={singleProduct.specification[0].specificationList.map((item) => ({ text: item }))} /></>
+      ) : null}
+    </div>
+    </div>
+  </div>
+
+  <InvisibleBanner height="h-28" id="reviews" />
+
+  {/*REVIEW SECTION*/}
+  <div className="pb-4 max-w-7xl m-auto px-8">
+    <Blacktitle
+      title={`REVIEWS (${reviews?.length || 0})`}
+      textSize="text-4xl"
+      textColor="text-black-373933"
+    />
+  </div>
+
+  <div>
+    <Reviews reviews={mapReviews()} />
+  </div>
+
+  <div className="pt-20">
+    <ReviewForm productId={productId} />
+  </div>
+
+  {/*SELLS CARDS SECTION*/}
+  {recommendations.length > 0 ? (
+    <div className="pb-4">
+      <Blacktitle
+        title="PRODUCT RECOMMENDATIONS"
+        textSize="text-5xl"
+        textColor="text-black-373933"
+      />
+      <SellCards gap="gap-12" cards={mapProducts()} />
+    </div>
+  ) : null}
+
+  {/*SLIDER SECTION*/}
+
+  {/* <div className="py-32 px-8">
+    {product.collections.edges.length !== 0 &&
+    product.collections.edges[0].node.title !== 'Packages' &&
+    CMSData !== undefined ? (
+      <div>
+        {(() => {
+          if (widthSize !== undefined && widthSize >= 800) {
+            return (
+              <Slider
+                title1="ALL"
+                title2={product.collections.edges[0].node.title}
+                btnText={`SEE ALL ${product.collections.edges[0].node.title}`}
+                btnBorder="border-black-373933"
+                link={`${routes.products.path}?category=${product.collections.edges[0].node.title}`}
+                border="border-2"
+                bgImage={mapSubcategories()}
+              />
+            );
+          } else {
+            return (
+              <SliderProgress
+                title1={'ALL'}
+                title2={product.collections.edges[0].node.title}
+                color1={'text-red-bc2026'}
+                color2={'text-black-373933'}
+                btnText={`SEE ALL ${product.collections.edges[0].node.title}`}
+                link={`${routes.products.path}?category=${product.collections.edges[0].node.title}`}
+                bgImage={mapSubcategories()}
+                gap="gap-20"
+                pb="py-4"
+              />
+            );
+          }
+        })()}
+      </div>
+    ) : null}
+  </div> */}
+</section>
+<Footer productCat={header.categories} />
+</>

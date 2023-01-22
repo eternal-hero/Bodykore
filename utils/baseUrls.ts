@@ -1,0 +1,2 @@
+export const mediaUrl = "http://cms.bodykore.com"
+export const imageNotFound = "http://cms.bodykore.com/uploads/thumbnail_no_result_data_document_or_file_not_found_concept_illustration_flat_design_eps10_modern_graphic_element_for_landing_page_empty_state_ui_infographic_icon_etc_vector_d2f8bafe46.jpg?width=400&height=400"

@@ -1,0 +1,5 @@
+Shopify integrated:
+	Klaviyo Email Marketing https://www.klaviyo.com/ecommerce-integrations/shopify
+	CIN7 https://www.cin7.com/software/integrations/shopify-inventory-management/
+	Rivo Abandoned Cart Recovery https://apps.shopify.com/push-notification-hero?locale=es
+	Stamped can also be integrated with shopify

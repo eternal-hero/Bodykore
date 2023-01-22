@@ -1,0 +1,14 @@
+.fit {
+  min-height: calc(100vh - 88px);
+}
+
+.slider-progress {
+  background: #ccc;
+}
+
+.slider-progress-bar {
+  background: red;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}

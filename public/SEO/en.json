@@ -1,0 +1,210 @@
+{
+  "default": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "ambTerms": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "warranty": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "return_policy": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "cookies": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "privacy_policy": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "terms_use": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "home": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "categoryPackages": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "productsCategories": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "aboutUs": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "singleProduct": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "portfolio": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "portfolioProject": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "allProducts": {
+    "title": "{product} - Bodykore",
+    "description": "",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "manuals": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "videos": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "storeLocator": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "ambassador": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "loyaltyProgram": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "blog": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "post": {
+    "title": "{title} - Bodykore",
+    "description": "",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "article": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "finance": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "gymSolutions": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  },
+  "contact": {
+    "title": "Bodykore",
+    "description": "Bodykore",
+    "image": {
+      "alt": "Bodykore",
+      "url": ""
+    }
+  }
+}
